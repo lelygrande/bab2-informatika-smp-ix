@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Berpikir Komputasional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e60da;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        .submit-button:active {
+            background-color: #3e8e41;
+            transform: scale(0.95);
+        }
+        .back-button {
+            display: block;
+            width: 40%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .back-button:active {
+            background-color: #004085;
+            transform: scale(0.95);
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kuis Berpikir Komputasional</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. Apa yang dimaksud dengan berpikir komputasional?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="a">Menggunakan komputer untuk menyelesaikan semua masalah</li>
+                    <li><input type="radio" name="q1" value="b">Mengembangkan algoritma untuk memecahkan masalah</li>
+                    <li><input type="radio" name="q1" value="c">Menghafal kode-kode pemrograman</li>
+                    <li><input type="radio" name="q1" value="d">Mengetik cepat di komputer</li>
+                </ul>
+            </div>
+            <!-- Repeat similar blocks for questions 2 to 10 -->
+            <div class="question">
+                <h3>2. Langkah pertama dalam berpikir komputasional adalah?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="a">Mengidentifikasi masalah</li>
+                    <li><input type="radio" name="q2" value="b">Mencari solusi yang ada</li>
+                    <li><input type="radio" name="q2" value="c">Mengevaluasi hasil</li>
+                    <li><input type="radio" name="q2" value="d">Menulis kode program</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>3. Algoritma adalah?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="a">Himpunan instruksi untuk menyelesaikan masalah</li>
+                    <li><input type="radio" name="q3" value="b">Kode program yang ditulis dalam bahasa pemrograman</li>
+                    <li><input type="radio" name="q3" value="c">Proses debugging program</li>
+                    <li><input type="radio" name="q3" value="d">Prosedur untuk menjalankan komputer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>4. Contoh algoritma sederhana adalah?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="a">Algoritma pengurutan angka</li>
+                    <li><input type="radio" name="q4" value="b">Menulis email</li>
+                    <li><input type="radio" name="q4" value="c">Menggunakan media sosial</li>
+                    <li><input type="radio" name="q4" value="d">Menggambar di komputer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>5. Dekompisi adalah?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q5" value="a">Memecah masalah besar menjadi masalah kecil</li>
+                    <li><input type="radio" name="q5" value="b">Mencari pola dalam data</li>
+                    <li><input type="radio" name="q5" value="c">Menghapus bug dari program</li>
+                    <li><input type="radio" name="q5" value="d">Mengulang kode program</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>6. Mengapa pola penting dalam berpikir komputasional?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q6" value="a">Untuk mengidentifikasi kesamaan dalam masalah</li>
+                    <li><input type="radio" name="q6" value="b">Untuk menghemat waktu dalam menulis kode</li>
+                    <li><input type="radio" name="q6" value="c">Untuk meningkatkan kecepatan komputer</li>
+                    <li><input type="radio" name="q6" value="d">Untuk mengurangi ukuran program</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>7. Abstraksi dalam berpikir komputasional adalah?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q7" value="a">Mengabaikan detail yang tidak penting</li>
+                    <li><input type="radio" name="q7" value="b">Menambahkan detail tambahan ke masalah</li>
+                    <li><input type="radio" name="q7" value="c">Menyimpan data dalam variabel</li>
+                    <li><input type="radio" name="q7" value="d">Mengoptimalkan program</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>8. Debugging adalah proses untuk?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q8" value="a">Menghapus kesalahan dari kode program</li>
+                    <li><input type="radio" name="q8" value="b">Menulis dokumentasi program</li>
+                    <li><input type="radio" name="q8" value="c">Mengompilasi kode program</li>
+                    <li><input type="radio" name="q8" value="d">Menjalankan program</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>9. Manakah yang bukan termasuk dalam berpikir komputasional?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q9" value="a">Mencari pola</li>
+                    <li><input type="radio" name="q9" value="b">Mengembangkan algoritma</li>
+                    <li><input type="radio" name="q9" value="c">Menulis laporan</li>
+                    <li><input type="radio" name="q9" value="d">Dekompisi masalah</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>10. Algoritma yang efisien adalah?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="q10" value="a">Menggunakan sumber daya seminimal mungkin</li>
+                    <li><input type="radio" name="q10" value="b">Menghasilkan output yang sama dengan input</li>
+                    <li><input type="radio" name="q10" value="c">Menggunakan banyak memori</li>
+                    <li><input type="radio" name="q10" value="d">Menggunakan waktu komputasi yang maksimal</li>
+                </ul>
+            </div>
+            <button type="button" class="submit-button" onclick="submitQuiz()">Submit</button>
+            <a href="index.html" class="back-button">Kembali ke Menu</a>
+        </form>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById('quiz-form');
+            const formData = new FormData(form);
+            const answers = {
+                q1: 'b',
+                q2: 'a',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a',
+                q9: 'c',
+                q10: 'a'
+            };
+
+            let score = 0;
+            for (const [question, answer] of Object.entries(answers)) {
+                if (formData.get(question) === answer) {
+                    score++;
+                }
+            }
+
+            alert(`Skor Anda adalah ${score} dari 10`);
+        }
+    </script>
+</body>
+</html>

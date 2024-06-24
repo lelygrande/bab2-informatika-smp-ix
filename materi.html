@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Informatika Kelas 9 Bab 2 Berpikir Komputasional</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .w3-half img:hover {
+        opacity: 1;
+      }
+      .container-img {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-button w3-hide-large w3-display-topleft"
+        style="width: 100%; font-size: 22px"
+        >Close Menu</a
+      >
+      <div class="w3-container">
+        <button type="submit" class="w3-button"><a href="index.html">Home</a></button>
+        <h3 class="w3-padding-50">
+          <b>Bab 2<br />Berpikir Komputasional</b>
+        </h3>
+      </div>
+      <div class="w3-bar-block">
+        <a
+          href="#strukturdata"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Struktur Data</a
+        >
+        <a
+          href="#ekspresilogika"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Ekspresi dan Operasi Logika</a
+        >
+        <a
+          href="#algoritma"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Algoritma Pemrograman</a
+        >
+        <a
+          href="#berlatih"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Ayo, Kita Berlatih</a
+        >
+        <a
+          href="#ingintahu"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Ingin tahu lebih</a
+        >
+        <a
+          href="#about"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >About</a
+        >
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header
+      class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding"
+    >
+      <a
+        href="javascript:void(0)"
+        class="w3-button w3-blue w3-margin-right"
+        onclick="w3_open()"
+        >☰</a
+      >
+      <button type="submit" class="w3-button"><a href="index.html">Home</a></button>
+      <span>Bab 2 Berpikir Komputasional</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px">
+        <h1 class="w3-jumbo"><b>Bab 2: Berpikir Komputasional</b></h1>
+        <h1 class="w3-xxxlarge w3-text-blue" id="strukturdata">
+          <b>Struktur Data</b>
+        </h1>
+        <hr style="width: 50px; border: 5px solid rgb(37, 39, 205)" class="w3-round" />
+      </div>
+
+      <!-- Photo grid (modal) -->
+      <div class="w3-row-padding">
+        <div class="w3-container">
+          <p>
+            Pada materi kelas VII dan VIII, kalian sudah mempelajari struktur
+            data daftar (list) dan tumpukan (stack). Pada kelas IX ini, kalian
+            akan mempelajari dua struktur data lain yang sering digunakan dalam
+            bidang Informatika, yaitu graf (graph) dan pohon (tree).
+          </p>
+          <p>
+            Apakah kalian pernah memerhatikan bagaimana struktur susunan
+            kepengurusan dalam sebuah organisasi? Struktur organisasi tersebut
+            biasanya digambarkan dengan struktur pohon seperti yang diberikan
+            pada Gambar 2.2.
+          </p>
+          <div class="container-img">
+            <img src="img/gambar2.2.png" alt="" />
+          </div>
+          <p>
+            Struktur pohon menggambarkan sebuah hierarki. Ciri dari struktur
+            pohon ialah bahwa “anak” (child) yang hierarkinya lebih rendah,
+            hanya mempunyai satu “orang tua” (parent). Anak yang orang tuanya
+            sama, sama levelnya, disebut “bersaudara”. Dalam bidang Informatika,
+            dikenal juga struktur data graf (graph) seperti yang diberikan pada
+            Gambar 2.3.
+          </p>
+        </div>
+        <div class="container-img">
+          <img src="img/gambar2.3.png" alt="" />
+        </div>
+        <p>
+          Struktur data graf dapat digunakan untuk merepresentasikan data dalam
+          berbagai kasus, misalnya jalan yang menghubungkan 2 tempat. Secara
+          spesifik, misalnya menggambarkan jalur kereta api dari suatu kota ke
+          kota lain. Jika kita menggunakan kasus jalur kereta api, Gambar 2.3
+          dapat diartikan menjadi seperti berikut: terdapat jalur kereta api
+          yang menghubungkan Kota A dan Kota D, terdapat jalur kereta api yang
+          menghubungkan Kota A dan Kota C, Kota B dan Kota E tidak terhubung
+          langsung melalui jalur kereta api, dst. Walaupun tidak terhubung
+          langsung, jika kita ingin bepergian dari Kota B ke Kota E, maka kita
+          dapat memanfaatkan jalan dari B ke A, kemudian ke Kota C.
+        </p>
+        <p>
+          Hubungan dapat seperti yang disebutkan (dua arah) dan digambarkan
+          sebagai busur yang menghubungkan data. Hubungan juga dapat hanya satu
+          arah, misalnya jika jalan penghubung ada yang satu arah, dan ada yang
+          dua arah, penghubung digambarkan sebagai “anak panah” yang berarah.
+          Contoh: misalnya jalan dari A ke C hanya searah, yaitu dari A menuju
+          C, sedangkan jalan lainnya dua arah, grafnya menjadi seperti Gambar
+          2.4.
+        </p>
+
+        <div class="container-img">
+          <img src="img/gambar2.4.png" alt="" />
+        </div>
+        <p>
+          Hubungan searah atau dua arah tersebut dapat dimodelkan menjadi graf
+          pada Gambar 2.4. Graf adalah sebuah model tentang hubungan antardata.
+        </p>
+      </div>
+
+      <div class="w3-container" id="ekspresilogika" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Ekspresi Data dan Logika</b></h1>
+        <hr style="width: 50px; border: 5px solid rgb(37, 39, 205)" class="w3-round" />
+        <p>
+          Kalian tentu sudah tidak merasa asing lagi dengan ekspresi aritmatika
+          seperti yang ditunjukkan pada Gambar 2.4.
+        </p>
+        <div class="container-img">
+          <img src="img/gambar2.5.png" alt="" />
+        </div>
+        <p>
+          Pada Gambar 2.5, terdapat ekspresi aritmatika sederhana yang terdiri
+          dari tiga buah operand (1, 2, 3) dan tiga dua operator (+, x). Operan
+          dan perator telah kalian kenal dalam Aktivitas Teka-teki Operasi
+          Perhitungan pada Bab Berpikir Komputasional Kelas 8. Gabungan dari
+          operator dan operand tersebut disebut dengan ekspresi aritmatika.
+          Sedangkan proses untuk melakukan perhitungan operand-operand
+          berdasarkan operator terkait, disebut dengan operasi. Melalui soal
+          berikut ini, kalian akan diperkenalkan pada operator, ekspresi, dan
+          operasi logika.
+        </p>
+      </div>
+
+      <div class="w3-container" id="algoritma" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Algoritma</b></h1>
+        <hr style="width: 50px; border: 5px solid rgb(37, 39, 205)" class="w3-round" />
+        <p>
+          Dalam kehidupan sehari-hari, kalian dapat menemukan kegiatan yang
+          perlu dilakukan berulang kali. Misalnya, ketika makan, kalian berulang
+          kali menyuap makanan tersebut ke dalam mulut; ketika berjalan, kalian
+          berulang kali melangkahkan kaki; dalam satu minggu, tentu ada kegiatan
+          yang kalian lakukan berulang kali, yaitu sekolah – mengerjakan tugas –
+          belajar. Masih banyak contoh lainnya yang dapat kalian amati dan
+          dapati bahwa kalian sedang melakukan perulangan.
+        </p>
+      </div>
+
+      <div class="w3-container" id="berlatih" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Ayo, Kita Berlatih</b></h1>
+        <hr style="width: 50px; border: 5px solid rgb(37, 39, 205)" class="w3-round" />
+        <p>
+          Yola sedang menyusun sekumpulan tanda panah yang dapat mengarahkan
+          bola hijau tersebut menuju pintu keluar yang ditandai dengan x.
+        </p>
+        <div class="container-img">
+          <img src="img/gambar2.6.png" alt="" />
+        </div>
+        <p>
+          Jenis tanda panah yang dimiliki oleh Yola adalah
+          <img src="img/panah.png" alt="" />
+        </p>
+        <p>
+          Yola hanya diperbolehkan menggunakan 8 buah tanda panah. Sekumpulan
+          tanda panah yang disusun oleh Yola akan diulang sebanyak 4 kali. Bola
+          hanya dapat bergerak di kotak yang berwarna putih.
+        </p>
+        <b>Tantangan: </b>
+        <p>
+          Isilah kotak-kotak berikut dengan 8 tanda panah yang dapat mengarahkan
+          bola hijau menuju kotak yang ditandai dengan ‘x’!
+        </p>
+        <div class="container-img">
+          <img src="img/tantangan.png" alt="" />
+        </div>
+        <textarea style="width: 100%; height: 300px; padding: 10px; font-family: Arial, sans-serif; font-size: 16px;" placeholder="Masukkan teks di sini..."></textarea>
+      </div>
+
+      <div class="w3-container" id="ingintahu" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Ingin tahu lebih?</b></h1>
+        <hr style="width: 50px; border: 5px solid rgb(37, 39, 205)" class="w3-round" />
+        <p>
+          Jika kalian tertarik dengan materi ini dan ingin mendalaminya lebih jauh,
+berikut link yang bisa diakses:
+        </p>
+        <p>Struktur data graf <i>(graph)</i></p>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">Geeksforgeeks - Graph Data Structure</a></li>
+          <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/graph_data_
+            structure.htm">Tutorials Point - Data structures algorithm (graph data)</a></li>
+        </ul>
+        <p>Struktur data pohon <i>(tree)</i></p>
+        <ul>
+          <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/tree_data_
+            structure.htm">Tutorials Point - Data structures algorithm (tree data)</a></li>
+        </ul>
+        <i>Data Structure for Kids</i>
+        <ul>
+          <li><a href="https://codinghero.ai/7-basic-data-structures-for-kids/">7 Basic Data Structures for Kids</a></li>
+        </ul>
+        
+          <button
+            type="submit"
+            class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div
+      class="w3-light-grey w3-container w3-padding-32"
+      style="margin-top: 75px; padding-right: 58px"
+    >
+      <p class="w3-right">
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-opacity"
+          >w3.css</a
+        >
+      </p>
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+    </script>
+  </body>
+</html>
